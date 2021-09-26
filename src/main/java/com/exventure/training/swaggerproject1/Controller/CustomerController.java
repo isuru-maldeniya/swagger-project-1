@@ -19,9 +19,7 @@ public class CustomerController {
     }
 
     @PutMapping(value = "/updatecustmer")
-    public void updatedCustomer(@RequestBody CustomerDTO dto){
-        customerService.updateCustomer(dto);
-    }
+    public void updatedCustomer(@RequestBody CustomerDTO dto){customerService.updateCustomer(dto);}
 
     @GetMapping(value = "/getallcustomee")
     public List<CustomerDTO> getALllCustomers(){
